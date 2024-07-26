@@ -1,0 +1,301 @@
+/*<!----------------About-Section----------->*/
+.about-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+
+.right-side img {
+    width: 100%;
+}
+/*<!----------------About-Section----------->*/
+/*<!----------------Services-Section----------->*/
+.services {
+    background: #f5f9fc;
+}
+.services-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    justify-content: space-between;
+}
+.services-items img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 30px;
+}
+.services-items h3{
+    font-size: 24px;
+}
+.services-items p{
+    margin-top: 18px;
+    margin-bottom: 20px;
+}
+
+.services-title {
+    text-align: center;
+}
+
+.services-btn {
+    border: 1px solid #176b91;
+    border-radius: 30px;
+    background: white;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 15px;
+    font-weight: 400;
+    padding: 10px 20px;
+    transition: all 0.4s ease 0s;
+}
+.services-btn a:hover {
+    color: white;
+}
+.services-btn:hover {
+    background: #176b91;
+    border: 1px solid #176b91;
+    text-decoration: none;
+    color: white;
+  }
+/*<!----------------Services-Section----------->*/
+/*------------------Working With Us ------------*/
+.wwu-grid { 
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.wwu-left-section img {
+    width: 100%;
+    height: 100%;
+}
+.wwu-right-section {
+    position: relative;
+}
+.wwu-right-section img {
+    width: 100%;
+    height: 100%;
+}
+.wwu-right-section-text {
+    background: rgba(0, 0, 0, 0.8) none repeat scroll 0 0;
+    float: right;
+    height: 100%;
+    overflow: hidden;
+    width: 100%;
+    position: absolute;
+    padding: 80px 80px;
+    right: 0;
+    top: 0;
+    text-align: center;
+    align-content: center;
+}
+.wwu-right-section h2 {
+    color: white;
+}
+.wwu-right-section h5 {
+    color: white;
+}
+/*------------------Working With Us ------------*/
+/*---------Technology-------------------------*/
+.technologies h2{
+    text-align: center;
+}
+
+i.fa-brands {
+    font-size: 34px;
+}
+
+.technologies p {
+    text-align: center;
+}
+
+.tech-tab input{
+    display: none;
+  }
+  
+  .tech-tab{
+    display: grid;
+    grid-template-columns: 400px 1fr;
+    justify-content: space-between;
+  }
+  
+  .tech-tab .list{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    gap: 10px;
+    margin-right: 50px;
+  }
+  
+  .tech-tab .list label{
+    cursor: pointer;
+      line-height: 60px;
+      font-size: 20px;
+      font-weight: 600;
+      padding: 0.5rem 1rem;
+      border: 1px solid rgba(0, 0, 0, 0.1);
+      transition: all 0.5s ease;
+      z-index: 10;
+      border-radius: 4px;
+  }
+  
+  #java:checked ~ .list label.java,
+  #sap:checked ~ .list label.sap,
+  #ms-tech:checked ~ .list label.ms-tech,
+  #dot-net:checked ~ .list label.dot-net,
+  #oracle:checked ~ .list label.oracle,
+  #rdbms:checked ~ .list label.rdbms{
+    color: #ffffff;
+  }
+  
+  .tech-tab .slider{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 77px;
+    width: 100%;
+    transition: all 0.5s ease;
+    background: #176b91;
+    border-radius: 4px;
+  }
+  
+  #java:checked ~ .list .slider{
+    top: 0;
+  }
+  
+  #sap:checked ~ .list .slider{
+    top: 88px;
+  }
+  
+  #ms-tech:checked ~ .list .slider{
+    top: 175px;
+  }
+  
+  #dot-net:checked ~ .list .slider{
+    top: 263px;
+  }
+  
+  #oracle:checked ~ .list .slider{
+    top: 351px;
+  }
+  
+  #rdbms:checked ~ .list .slider{
+    top: 437px;
+  }
+  
+  .tech-tab .tab-content{
+    height: auto;
+    color: rgba(33, 32, 32, 0.7);
+  }
+  
+  .tech-tab .text{
+    display: none;
+  }
+  
+  .tech-tab .text .title{
+    font-size: 25px;
+    margin-bottom: 10px;
+    font-weight: 500;
+  }
+  
+  .container .text p{
+    text-align: justify;
+  }
+  
+  .tech-tab .tab-content .java{
+    display: block;
+  }
+  .tab-content img {
+    width: 100%;
+    height: 451px;
+    margin-bottom: 20px;
+  }
+  
+  #java:checked ~ .tab-content .java,
+  #sap:checked ~ .tab-content .sap,
+  #ms-tech:checked ~ .tab-content .ms-tech,
+  #dot-net:checked ~ .tab-content .dot-net,
+  #oracle:checked ~ .tab-content .oracle,
+  #rdbms:checked ~ .tab-content .rdbms{
+    display: block;
+  }
+  
+  #sap:checked ~ .tab-content .java,
+  #ms-tech:checked ~ .tab-content .java,
+  #dot-net:checked ~ .tab-content .java,
+  #oracle:checked ~ .tab-content .java,
+  #rdbms:checked ~ .tab-content .java{
+    display: none;
+  }
+  
+  .tech-tab .list label:hover{
+    color: #176b91;
+  }
+  
+@media screen and (max-width: 678px) {
+    .tech-tab {
+        grid-template-columns: 1fr;
+    }
+    .tech-tab .list {
+        margin-right: 0px;
+    }
+}
+  /*--------------Technology-------------------------*/
+   /*--------------Our Clients-------------------------*/
+  .home-clients{
+    text-align: center;
+  }
+  .our-clients-home {
+    display: flex;
+    justify-content: space-between;
+  }
+  .our-clients-home img{
+    width: 15%;
+    height: auto;
+  }
+  .home-clients a{
+    text-decoration: none;
+    color: #f79648;
+  }
+  .home-clients a:hover{
+    color: #f79648;
+  }
+
+   /*--------------Our Clients-------------------------*/
+
+
+@media screen and (max-width: 678px) {
+/*<!----------------About-Section----------->*/
+    .about-container{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+/*<!----------------About-Section----------->*/
+/*<!----------------Services-Section----------->*/
+    .services-items h3 {
+        font-size: 24px;
+    }
+    .services-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .services-items p {
+         margin-top: 0px;
+        margin-bottom: 10px;
+    }
+    .services-items img {
+        margin-bottom: 10px;
+    }
+
+/*<!----------------Services-Section----------->*/
+
+/*------------------Working With Us ------------*/
+    .wwu-grid {
+        grid-template-columns: 1fr;
+    }
+    .wwu-right-section h3 {
+        font-size: 18px;
+    }
+    .wwu-right-section-text {
+        padding: 30px;
+    }
+
+/*------------------Working With Us ------------*/
+}
