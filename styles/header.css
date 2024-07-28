@@ -140,7 +140,7 @@ nav .wrapper {
   color: #333;
 }
 .mega-links li{
-  padding: 10px;
+  padding: 0px 10px;
   border-radius: 3px;
 }
 .mega-links li:hover{
@@ -150,7 +150,7 @@ nav .wrapper {
 .mega-links {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  gap: 30px;
+  gap: 18px;
   transition: max-height 0.8s ease-in !important;
 }
 ul.mega-links {
