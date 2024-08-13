@@ -2,11 +2,23 @@
 .about-container{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    align-items: center;
+    gap: 20px;
 }
 
 .right-side img {
     width: 100%;
+}
+.mission {
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 5px 5px 5px 5px;
+  box-shadow: 0px 14px 27px 0px rgba(45, 1, 116, 0.13);
+}
+.mission img {
+  width: 50px;
+}
+.mission h5 {
+  color: #176b91;
 }
 /*<!----------------About-Section----------->*/
 /*<!----------------Services-Section----------->*/
