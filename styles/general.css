@@ -34,6 +34,9 @@ section {
     position: relative;
   }
 
+  h1 {
+    font-size: 3rem;
+  }
   h2 {
     font-size: 44px;
     color: #176b91;
@@ -105,12 +108,18 @@ p {
 .pt-5, .py-4 {
   padding-top: 2rem !important;
 }
-.pl-4, .py-4 {
+.pl-4, .plr-4, .py-4 {
   padding-left: 3rem;
 } 
-.pr-4, .py-4 {
+.pr-4, plr-4, .py-4 {
   padding-right: 3rem;
 } 
+.p-4 {
+  padding: 1.5rem !important;
+}
+.text-end {
+  text-align: right !important;
+}
 /*------------------------ mobile-version--------------*/
 @media screen and (max-width: 678px) {
   section {
