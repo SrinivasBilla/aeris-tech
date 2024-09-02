@@ -71,12 +71,11 @@
 .prob-right-details {
   display: flex;
   flex-direction: column;
-  
 }
 .orange-underline2:after {
   content: "";
   position: absolute;
-  top: 83px;
+  top: 84px;
   right: 21%;
   height: 1px;
   width: 95%;
@@ -139,16 +138,54 @@
 .orange-underline-center2:after{
   content: "";
   position: absolute;
-  top: 73px;
+  top: 72px;
   left: calc(43% - 3%);
   height: 1px;
   width: 95%;
   max-width: 255px;
   background-color: #f79648;
 } 
+.orange-underline-center3:before{
+  content: "";
+  position: absolute;
+  top: 18%;
+  left: calc(50% - 3%);
+  height: 5px;
+  width: 55px;
+  background-color: #f79648;
+} 
+.orange-underline-center3:after{
+  content: "";
+  position: absolute;
+  top: 76px;
+  left: calc(43% - 3%);
+  height: 1px;
+  width: 95%;
+  max-width: 255px;
+  background-color: #f79648;
+} 
+.orange-underline-center2:before{
+  content: "";
+  position: absolute;
+  top: 70px;
+  left: calc(50% - 3%);
+  height: 5px;
+  width: 55px;
+  background-color: #f79648;
+} 
+.orange-underline-center2:after{
+  content: "";
+  position: absolute;
+  top: 72px;
+  left: calc(43% - 3%);
+  height: 1px;
+  width: 95%;
+  max-width: 255px;
+  background-color: #f79648;
+}
 .product-features {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(2, 1fr);
   gap: 20px;
 }
 .product-features-inner {
